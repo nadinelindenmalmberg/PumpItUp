@@ -1,0 +1,159 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container-searchbar {
+  height: 45px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+
+.logo-searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+
+}
+
+.logo-searchbar img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.searchbar {
+  display: flex;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 30px;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.searchbar:hover input {
+  width: 400px;
+}
+
+.searchbar input {
+  width: 0;
+  max-width: 400px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  transition: 0.8s;
+  background: transparent;
+}
+
+.searchbar svg {
+  color: #000;
+}
+
+
+.search-result{
+  position: absolute;
+  bottom: 50px;
+  left: 80px;
+  background-color: rgb(229, 227, 227);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  width: 200px;
+  height: 130px;
+}
+
+.search-result-close{
+  position: absolute;
+  top:0;
+  right: 0;
+  background-color: rgb(229, 227, 227);
+  width: 20px;
+  height: 16px;
+}
+
+.search-result:hover{
+  transform: scale(1.25);
+}
+
+.search-result-close:hover {
+  background-color: #252725; 
+  color: white;
+}
+
+.places-container {  /* Sökrutan */
+  display: flex;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.combobox-input {
+  width: 400px;
+  max-width: 400px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  transition: 0.8s;
+  background: transparent;
+}
+
+ .places-container input {/*Searchtext */
+  width: 400px;
+  max-width: 400px;
+  outline: none;
+  border: none;
+  font-weight: 100;
+  transition: 0.8s;
+  background: transparent;
+}
+
+
+
+.comboList {
+  width: 400px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  background: #fff;
+  list-style-type: none;  
+}
+
+.dir_button {
+  z-index: 100;
+
+}
+
+.ResultBox {
+  z-index: 100;
+
+}
